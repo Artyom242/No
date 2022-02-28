@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans&display=swap');
+
+
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+//-----------------------------------------------
+body{
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden; 
+	display: flex;
+	flex-direction: column;
+}
+
+._container{
+	max-width: 1198px;
+	padding: 0 15px;
+	margin: 0 auto;
+	box-sizing: content-box;
+}
+
+._ibg{
+	position: relative;
+	}
+
+
+
+//----------header-----------------------------------
+.header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+
+	.header_container {
+		display: flex;
+		min-height: 100px;
+		align-items: center;
+		justify-content:space-between;
+	}
+
+	.header__menu {
+				:hover{
+			color: #F06C00;
+		}
+	}
+
+	.menu{
+		padding: 5px 0; 
+	}
+
+
+	.menu__list {
+		flex-wrap: wrap;
+		display: flex;
+
+	}
+
+	.menu__item:not(:last-child) {
+		margin: 0 30px 0 0;
+	}
+
+	.menu__link {
+		font-size: 12px;
+		line-height: 171%; //   24/14*100
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #191919;
+
+		transition-property: all;
+		transition-duration: 0.5s;
+		transition-delay: 0s;
+
+		@media (max-width: 700px) {
+			font-size: 18px;	
+		}
+	}
+}
+
+//-------------------------------------
+
+.main {
+		//flex: 1 1 auto;
+	.work {
+		.work__text {
+				background-color: #F6F6F6;
+		}
+		.text__container {
+			max-width: 516px;
+		}
+		.text {
+			margin: 100px 0 0 0;
+			padding: 100px 0;
+			text-align: center;
+			.title {
+				font-size: 38px;
+				font-weight: 600;
+				letter-spacing: 0.01em;
+				color: #171717;
+				padding-bottom: 30px;
+			}
+			.subtitle {
+				font-family: 'Nunito Sans';
+				font-size: 18px;
+				line-height: calc(28/14*100%);
+				font-weight: 400;
+				letter-spacing: 0.005em;
+				color: #787878;
+			}
+		}
+		.work__icon {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
+
+			.icon{
+				position: relative;
+				padding: 0 0 85% 0;
+
+
+
+			.grid__block {
+					img{
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						object-fit: cover;
+						}
+					
+			}
+		}
+	}
+}
+
+//--------------------------------
+
+.footer{
+background-color: #000000;
+}
+.footer-container {
+}
+.footer-container__body {
+	padding: 100px 0;
+		display: flex;
+}
+.footer-container__body--rights {
+	max-width: 225px;
+	margin-right: calc(246/1173*100%);
+}
+.body--title {
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 0.01em;
+color: #ffffff;
+padding-bottom: 27px;
+}
+.body--subtitle {
+	font-family: 'Nunito Sans';
+font-size: 15px;
+line-height: calc(24/14*100%);
+font-weight: 400;
+letter-spacing: 0.005em;
+color: #bcbcbc;
+}
+.footer-container__body--connection {
+	max-width: 154px;
+		margin-right: calc(145/1173*100%);
+}
+.body--connection {
+	font-family: 'Nunito Sans';
+font-size: 15px;
+line-height: calc(24/14*100%);
+font-weight: 400;
+letter-spacing: 0.005em;
+color: #bcbcbc;
+}
+.footer-container__body--about {
+		margin-right: calc(45/1173*100%);
+}
+.list--about {
+}
+.menu--list {
+}
+.menu--item {
+}
+.menu--link {
+font-family: 'Nunito Sans';
+font-size: 15px;
+line-height: calc(24/14*100%);
+font-weight: 400;
+letter-spacing: 0.005em;
+color: #bcbcbc;
+}
+.footer-container__body--news {
+		margin-right: calc(135/1173*100%);
+}
+.footer-container__body--network {
+}
+
